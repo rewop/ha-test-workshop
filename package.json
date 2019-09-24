@@ -10,6 +10,7 @@
     "@types/react": "16.9.2",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
+    "faker": "4.1.0",
     "jest-enzyme": "7.1.1",
     "material": "0.4.1",
     "react": "16.8.6",

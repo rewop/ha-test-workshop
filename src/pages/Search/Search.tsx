@@ -11,11 +11,11 @@ import { CardMedia } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345,
+    maxWidth: 350,
     margin: theme.spacing(2)
   },
   media: {
-    height: 190
+    height: 200
   }
 }));
 
@@ -39,10 +39,15 @@ function ListingSkeleton() {
 }
 
 function ListingCard({ listing }: { listing: Listing }) {
+  const classes = useStyles();
   return (
     <div data-test-locator="listing_card">
-      <Card>
-        <CardMedia image={listing.image} title={listing.title} />
+      <Card className={classes.card}>
+        <CardMedia
+          className={classes.media}
+          image={listing.image}
+          title={listing.title}
+        />
       </Card>
     </div>
   );
